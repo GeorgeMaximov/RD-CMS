@@ -1,21 +1,21 @@
 # RD CMS - Readme
 A lightweight yet powerful Content Management System. Currently available only in Russian language.
 
-Лёгкая, но мощная Система Управления Сайтом.
+Р›С‘РіРєР°СЏ, РЅРѕ РјРѕС‰РЅР°СЏ РЎРёСЃС‚РµРјР° РЈРїСЂР°РІР»РµРЅРёСЏ РЎР°Р№С‚РѕРј.
 
-#### System requirements / Системные требования
+#### System requirements / РЎРёСЃС‚РµРјРЅС‹Рµ С‚СЂРµР±РѕРІР°РЅРёСЏ
 
 * PHP>=4.0
 * MySQL
 * cURL
-* CRON (not required / не обязательно)
+* CRON (not required / РЅРµ РѕР±СЏР·Р°С‚РµР»СЊРЅРѕ)
 
-#### External resources / Ссылки
+#### External resources / РЎСЃС‹Р»РєРё
 
 More information: http://helpcast.ru/a/131
 
-Подробнее: http://helpcast.ru/a/131
+РџРѕРґСЂРѕР±РЅРµРµ: http://helpcast.ru/a/131
 
 Version history: http://helpcast.ru/a/88
 
-История версий: http://helpcast.ru/a/88
+РСЃС‚РѕСЂРёСЏ РІРµСЂСЃРёР№: http://helpcast.ru/a/88
