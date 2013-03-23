@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /?act=zor
+Disallow: /index.php?act=zor
+Allow: /
+

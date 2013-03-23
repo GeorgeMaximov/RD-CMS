@@ -1,0 +1,43 @@
+### Options
+Options -Indexes
+Options +FollowSymLinks
+DirectoryIndex main.htm main.html index.htm index.html index.php
+AddDefaultCharset UTF-8
+
+### Hard Redirects
+redirect 301 /auth /modules/vk_set_auth.php
+redirect 301 /support /?act=support&
+redirect 301 /blog /?
+redirect 301 /sta /?act=support&mode=admin
+
+### Rewrite Rules
+RewriteEngine on
+
+### Ban some bots
+RewriteCond %{HTTP_USER_AGENT} ^GSLFbot [NC] 
+RewriteRule ^.* - [F]
+
+### Some useful redirects
+RewriteRule ^r/([^.]+)/?$ /include/redir.php?name=$1 [L,R=303]
+RewriteRule ^a/([0-9]+)$ /?act=fulltext&id=$1 [L,R=302]
+
+### Errors
+ErrorDocument 403 /modules/error.php?error=403
+ErrorDocument 404 /modules/error.php?error=404
+
+### Caching
+AddOutputFilterByType DEFLATE text/plain
+AddOutputFilterByType DEFLATE text/html
+AddOutputFilterByType DEFLATE text/xml
+AddOutputFilterByType DEFLATE text/css
+AddOutputFilterByType DEFLATE application/xml
+AddOutputFilterByType DEFLATE application/xhtml+xml
+AddOutputFilterByType DEFLATE application/rss+xml
+AddOutputFilterByType DEFLATE application/javascript
+AddOutputFilterByType DEFLATE application/x-javascript
+
+# Block reading htaccess
+<Files .htaccess>
+ order allow,deny
+ deny from all
+</Files>
